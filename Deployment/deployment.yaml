@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php-sample
+  namespace: minikube
+  labels:
+    app: php-sample
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: php-hello-sample
+  template:
+    metadata:
+      labels:
+        app: php-hello-sample
+    spec:
+      containers:
+        - name: php-hello-sample
+          image: ausaf0909/php-sample:master-9e81199189328975fa6961fcd20c27bbd0bb16fe # Replace with your actual Docker image and tag
+          ports:
+            - containerPort: 4000
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
