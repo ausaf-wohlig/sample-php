@@ -1,5 +1,5 @@
 # Use an official PHP image as the base
-FROM php:8.1-apache
+FROM --platform=linux/arm64 php:8.1-apache
 
 # Set working directory inside the container
 WORKDIR /
