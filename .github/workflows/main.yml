@@ -10,7 +10,7 @@ on:
 
     branches:
 
-      - master
+      - main
 
 
 
@@ -93,7 +93,7 @@ jobs:
 
           git commit -m "updating newer image"
 
-          git push --set-upstream origin master
+          git push --set-upstream origin main
 
 
      
