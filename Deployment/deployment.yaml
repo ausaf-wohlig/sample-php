@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: php-hello-sample
-          image: ausaf0909/php-sample:main-af73a5734e8003512531bf52ce4a666eede0c66c # Replace with your actual Docker image and tag
+          image: ausaf0909/php-sample:main-af73a5734e8003512531bf52ce4a666eede0c66c 
           ports:
             - containerPort: 4000
           resources:
