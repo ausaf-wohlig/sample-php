@@ -75,8 +75,6 @@ jobs:
 
         run: |
 
-          # Assuming you have a manifest file named k8s.yaml
-
           git config user.name "$GITHUB_ACTOR"
 
           git config user.email "$GITHUB_ACTOR@gmail.com"
