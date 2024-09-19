@@ -93,4 +93,6 @@ jobs:
 
           git push --set-upstream origin main
 
+          git pull
+
           
