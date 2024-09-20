@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: php-hello-sample
-          image: ausaf0909/php-sample:main-9c6a54cf7d09fc34e2cc697cb9141a9adf8f5d51
+          image: ausaf0909/php-sample:main-beee22eabb79333bf48e1868d78830825eb978cc
           ports:
             - containerPort: 4000
           resources:
